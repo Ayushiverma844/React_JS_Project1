@@ -1,5 +1,4 @@
 "Discover & Listen: Explore Songs Through Interactive Cards"
-https://glowing-goldfish-6jjqw4pvr4gc5g77-5173.app.github.dev/
 
 # React + Vite
 
