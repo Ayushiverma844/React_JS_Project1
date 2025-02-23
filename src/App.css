@@ -1,0 +1,74 @@
+/* Container to arrange the cards in a grid */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 27px;
+  padding: 50px 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Card styling */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Ensures the content flows vertically */
+  justify-content: space-between; /* Ensures that the content is spaced out */
+  height: 100%; /* Take up available height */
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Image styling */
+.card-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #eee;
+}
+
+/* Text styling */
+.card h3 {
+  font-size: 1.5rem;
+  margin-top: 8px;
+  font-weight: 500;
+  color: rgb(35, 34, 34);
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+/* Ensure the button stays at the bottom and is centered */
+.card .download-btn {
+  margin-top: auto; /* Push the button to the bottom of the card */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Ensures the link doesn’t show as underlined */
+  margin-bottom: 15px; /* Add space below the button */
+  width: auto; /* Remove excessive width */
+  max-width: 200px; /* Set a max-width to limit the button size */
+  display: block; /* Make the button a block element for centering */
+  margin-left: auto;
+  margin-right: auto; /* Center the button */
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
